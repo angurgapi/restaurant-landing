@@ -1,0 +1,14 @@
+include ../rectangle/rectangle.pug
+
+.about
+    .about-section
+        .section.section__left
+            h2.section__title about us
+            .divider
+            p.section__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            p.section__text Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+        
+        .section.section__right
+            img.section__img(src="../../../src/img/about.png")
+            .section__rectangle
+                +rectangle()

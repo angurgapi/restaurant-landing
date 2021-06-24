@@ -25,6 +25,7 @@ time, mark, audio, video {
   box-sizing: inherit;  
 
 }
+
 // *, html {
 // 	width: 100%;
 // }
@@ -36,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	min-width: 100%;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;

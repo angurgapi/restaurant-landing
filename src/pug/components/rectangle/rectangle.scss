@@ -1,0 +1,12 @@
+@import '../../../sass/vars.scss';
+
+.rectangle {
+    display: flex;
+    height: 210px;
+    width: 210px;
+    border-radius: 5px;
+    border: 20px solid $yellow;
+    @media(max-width: 800px){
+        display: none;
+    }
+}
