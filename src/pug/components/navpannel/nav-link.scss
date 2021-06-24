@@ -1,0 +1,17 @@
+.navpannel__link {
+    width: 133px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        transform: scale(1.5);
+    }
+    @media (max-width: 1400px) {
+        width: auto;
+        margin-right: 5px;
+      }
+}

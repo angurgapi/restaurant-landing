@@ -1,0 +1,42 @@
+include ../navpannel/nav-link.pug
+include ../button/button.pug
+include ../button/down-btn.pug
+include ../button/contact.pug
+
+.header
+    
+    .navpannel
+        .navpannel__block
+            +navlink({linkHref: '#', linkText: 'home'})
+            +navlink({linkHref: '#', linkText: 'about'})
+            +navlink({linkHref: '#', linkText: 'team'})
+            +navlink({linkHref: '#', linkText: 'booking'})
+        .header__logo
+            img(src="../../../src/img/wheel.svg")
+        .navpannel__block
+            +navlink({linkHref: '#', linkText: 'menu'})
+            +navlink({linkHref: '#', linkText: 'galery'})
+            +navlink({linkHref: '#', linkText: 'events'})
+            +navlink({linkHref: '#', linkText: 'contact'})
+
+    .header__body
+        .header__left
+            .header__schedule
+                p Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+        .header__central        
+            p.header__legend='restaurant'
+            .header__title
+                h2.header__title__text='hungry people'
+            .divider
+            .control
+                +button({style:'yellow-btn', btnText:'book table'})
+                +button({style:'transparent-btn', btnText:'explore'})
+
+            .down-btn
+                +downbtn()
+            
+        .header__right
+            .header__contacts
+                +contact({link:'#', iconClass: 'fab fa-facebook-f'})
+                +contact({link:'#', iconClass: 'fab fa-twitter'})
+                +contact({link:'#', iconClass: 'fab fa-instagram'})        

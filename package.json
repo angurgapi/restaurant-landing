@@ -1,0 +1,33 @@
+{
+  "name": "hungry-people",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --mode development --open",
+    "start": "npx webpack --config webpack.config.js",
+    "build": "webpack --mode production"
+  },
+  "author": "angurgapi",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "clean-webpack-plugin": "*",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^11.1.1",
+    "sass-resources-loader": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jquery.inputmask": "^3.3.4"
+  }
+}
