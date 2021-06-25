@@ -1,78 +1,11 @@
     @import '../../../sass/vars.scss';
 
-.about {
-    padding: 100px 80px 100px 80px;
-    @media(max-width:500px) {
-        padding: 20px;
-    }
-}
-.about-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: auto;
+.about-media {
+    margin-left: 80px;
     @media(max-width:1100px){
-        flex-direction: column;
+        margin: auto;
     }
 }
-.section {
-    height: 475px;
-    display: flex;
-    flex-direction: column;  
-    &__left {
-        max-width: 600px; 
-        text-align: center;
-        justify-content: center;     
-    }
-    &__title {        
-        font-size: 36px;
-        font-family: $mainFont;
-        text-transform: uppercase;
-        font-style: bold;
-        margin-bottom: 20px;
-    }
-    &__description {
-        margin-top: 20px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 28px;
-        font-family: $titleFont;
-    
-    }
-    &__text {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        font-family: $titleFont;
-    }
-
-    &__right {
-        margin-right: -170px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        @media(max-width: 1000px){
-            margin-right: 0;
-        }
-
-    }
-    &__img{
-        height: 475px;
-        width: 475px;
-        position: relative;
-        z-index: 10;
-        @media(max-width: 1500px){
-            height: auto;
-        }
-    }
-
-    &__rectangle{       
-        z-index: 1010;
-        position: relative;
-        left: -170px;
-        
-    }
-
+.about-rectangle{
+    left: -120px;
 }
-
