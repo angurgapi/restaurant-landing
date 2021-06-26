@@ -7,10 +7,10 @@ include ../button/contact.pug
     
     .navpannel
         .navpannel__block
-            +navlink({linkHref: '#', linkText: 'home'})
-            +navlink({linkHref: '#', linkText: 'about'})
-            +navlink({linkHref: '#', linkText: 'team'})
-            +navlink({linkHref: '#', linkText: 'booking'})
+            +navlink({linkHref: '/', linkText: 'home'})
+            +navlink({linkHref: '#about', linkText: 'about'})
+            +navlink({linkHref: '#team', linkText: 'team'})
+            +navlink({linkHref: '#booking', linkText: 'booking'})
         .header__logo
             img(src="../../../src/img/wheel.svg")
         .navpannel__block
@@ -32,7 +32,7 @@ include ../button/contact.pug
                 +button({style:'yellow-btn', btnText:'book table'})
                 +button({style:'transparent-btn', btnText:'explore'})
 
-            .down-btn
+            a.down-btn(href="#about")
                 +downbtn()
             
         .header__right

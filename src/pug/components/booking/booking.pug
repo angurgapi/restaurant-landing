@@ -1,0 +1,24 @@
+include ../button/button.pug
+include ../rectangle/rectangle.pug
+
+.section.no-header#booking
+    .section__body
+        .section__body__description
+            h2.section__body__title book a table
+            .divider
+            .booking-form
+                .booking-form__row
+                    input(type='text' placeholder='Name').booking-form__input
+                    input(type='email' placeholder='Email').booking-form__input
+                .booking-form__row
+                    input(type='tel' placeholder='Phone').booking-form__input
+                    
+                .booking-form__row
+                    input.booking-form__input
+                    input.booking-form__input
+                +button({style:'yellow-btn', btnText:'book now'})            
+        
+        .section__body__media.section__right
+            img.section__body__img(src="../../../src/img/clocks.webp", alt="fireplace")
+            .section__body__rectangle.about-rectangle
+                +rectangle()
