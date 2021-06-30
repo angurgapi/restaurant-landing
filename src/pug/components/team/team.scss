@@ -9,4 +9,13 @@
 .team-img{
     position: relative;
     left: -120px;
+    @media(max-width:800px){
+        left: 0;
+    }
+}
+
+.team-media{
+    @media(max-width:800px){
+        justify-content: center;
+    }
 }

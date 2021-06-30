@@ -95,8 +95,14 @@ table {
     
     &__description, &__media {
         height: 475px;
-        max-width: 600px; 
-        display: flex;        
+        width: 600px; 
+        display: flex; 
+        @media(max-width:1300px){
+            max-width: 400px;
+        } 
+        @media(max-width:1100px){
+            width: 90vw;
+        }        
     }
     &__description {    
         flex-direction: column; 
@@ -126,7 +132,7 @@ table {
 
     &__media {            
         flex-direction: row;
-        align-items: center;        
+        align-items: center;             
     }
     &__img{
         height: 475px;
@@ -135,8 +141,14 @@ table {
         z-index: 10;
         border-radius: 5px;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        @media(max-width: 1400px){
+            // width: 300px;
+            // height: 300px;
+            width: 350px;
+            height: 350px;
+        }
         @media(max-width: 500px){
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
     }

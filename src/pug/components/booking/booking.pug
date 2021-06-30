@@ -1,22 +1,35 @@
 include ../button/button.pug
 include ../rectangle/rectangle.pug
 
+
 .section.no-header#booking
     .section__body
         .section__body__description
             h2.section__body__title book a table
             .divider
             .booking-form
-                .booking-form__row
-                    input(type='text' placeholder='Name').booking-form__input
-                    input(type='email' placeholder='Email').booking-form__input
-                .booking-form__row
-                    input(type='tel' placeholder='Phone').booking-form__input
+                .booking-form__body
+                    label(for="nameInput").hidden name
+                    input(type='text' placeholder='Name').booking-form__input#nameInput
+
+                    label(for="emailInput").hidden email
+                    input(type='email' placeholder='Email').booking-form__input#emailInput
+                
+                    label(for="telInput").hidden phone
+                    input(type='tel' placeholder='Phone').booking-form__input#telInput
                     
-                .booking-form__row
+                    label(for="peopleInput").hidden people
+                    select(required).booking-form__input#peopleInput
+                        option.default-select(value = '0' disabled selected) People
+                        option(value= '1') 1 person
+                        option(value= '2') 2 people
+                        option(value= '3') 3 people
+                        option(value= '4') 4 people                        
+                
                     input.booking-form__input
                     input.booking-form__input
-                +button({style:'yellow-btn', btnText:'book now'})            
+
+                +button({style:'full-btn', btnText:'book now'})            
         
         .section__body__media.section__right
             img.section__body__img(src="../../../src/img/clocks.webp", alt="fireplace")
