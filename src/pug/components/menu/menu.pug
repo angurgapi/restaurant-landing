@@ -1,0 +1,8 @@
+.section.menu.no-header#menu  
+    h2.section__body__title delicious menu
+    .divider
+    p.section__body__text-bold.menu__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+    .menu__navigation   
+        each block in ['soupe', 'pizza', 'pasta', 'dessert', 'wine', 'beer', 'drinks']
+            .menu__navigation__block
+                p.dish-name= block

@@ -1,0 +1,26 @@
+.menu{
+    &__text {
+        max-width: 565px;
+        text-align: center;
+    }
+    &__navigation {
+        margin-top: 50px;
+        display: flex;
+        &__block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 50px;
+            &:not(:first-child) {
+                border-left: 1px solid rgba(0,0,0,.2);
+            }
+        }
+    }
+}
+
+.dish-name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
