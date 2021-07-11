@@ -1,0 +1,33 @@
+@import '../../../sass/vars.scss';
+
+.dish {
+    min-width: 20vw;
+    height: 66px;
+    letter-spacing: 1px;
+    font-size: $font--classic;
+    line-height: $font--classic;
+    @media(max-width: 1200px) {
+        line-height: 14px;
+    
+    }
+    @media(max-width: 750px) {
+        height: auto;        
+        margin-top: 10px;
+    }
+    &__name, &__price {
+        display: inline-block;
+        font-family: '$mainfont';        
+        font-weight: 400;
+        text-transform: uppercase;
+        
+    }
+    &__description {
+        font-family: $titleFont;
+        font-size: $font--small;
+        color: rgba(0,0,0,.4);
+    }
+    @media(max-width: 1000px) {
+        font-size:$font--small;
+    }
+}
+

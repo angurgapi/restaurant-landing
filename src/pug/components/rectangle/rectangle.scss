@@ -6,7 +6,7 @@
     width: 210px;
     border-radius: 5px;
     border: 20px solid $yellow;
-    @media(max-width: 800px){
+    @media(max-width: 600px){
         display: none;
     }
 }

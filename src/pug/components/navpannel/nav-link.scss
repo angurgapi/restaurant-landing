@@ -1,17 +1,18 @@
-.navpannel__link {
-    width: 133px;
-    font-family: 'Open Sans', sans-serif;
+@import '../../../sass/vars.scss';
+
+.navpannel__link {    
+    font-family: $titleFont;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: $font--small;
+    line-height: $font--classic;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     text-decoration: none;
+    z-index: 1100;
     &:hover{
-        transform: scale(1.5);
+        border-bottom: 2px solid $white;
     }
-    @media (max-width: 1400px) {
-        width: auto;
+    @media (max-width: 1400px) {        
         margin-right: 5px;
       }
 }
