@@ -12,6 +12,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   
 }
 .events-media{
@@ -33,6 +34,7 @@
     display: block;
     border-radius: 5px;
     box-shadow: 0 0 50px rgba(0,0,0,.5);
+    object-fit: cover;
     @media(max-width: 1500px) {
         height: 350px;
         width: 350px;
@@ -59,15 +61,16 @@
     -webkit-transform: translateY(-50%) rotateZ(90deg);
     -ms-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotateZ(90deg);
-
 }
 
 .media-right {
     transform: rotate(180deg);
     @media(max-width:1100px){
         margin-top: 100px;
-        margin-bottom: 100px;
     }
+}
+.events-footer {
+    color: rgba(255,255,255,.5);
 }
 
 @media(max-width: 1500px) {

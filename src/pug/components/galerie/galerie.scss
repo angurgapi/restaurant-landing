@@ -1,0 +1,17 @@
+.galerie-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media(max-width: 800px){
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.galerie-img {
+    object-fit: cover;
+    width: 25vw;
+    height: 25vw;
+    @media(max-width: 800px){
+        height: 50vw;
+        width: 50vw;
+    }
+}

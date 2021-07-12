@@ -88,10 +88,13 @@ table {
         align-items: center;
         text-align: center;
         &__text {
-            font-family: 'Open Sans';
+            font-family: 'Open Sans', sans-serif;
             color: rgba(51, 51, 51, 0.5);
-            font-weight: 700;
+            font-weight: 400;
             font-size: 12px;
+        }
+        &__bold {
+            font-weight: 700;
         }
     }
 }
@@ -149,11 +152,11 @@ table {
         height: 475px;
         width: 475px;
         position: relative;
+        object-fit: cover;
         z-index: 10;
         border-radius: 5px;
         box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-        @media(max-width: 1400px){
-            
+        @media(max-width: 1400px){            
             width: 350px;
             height: 350px;
         }
