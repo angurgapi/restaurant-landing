@@ -10,16 +10,7 @@
             grid-template-columns: 1fr;
         }
     }
-    &__input, .select-container{
-        padding: 10px;
-        display: flex;
-        height: 60px;       
-        background-color: #E5E5E5;
-        border-radius: 5px;
-        border: none;
-        &:focus, &:hover{
-            border: 1px solid rgba(0,0,0,.5);
-        }
+    &__input, .select-container{        
         @media(max-width:600px){
             width: 90%;
             margin: auto
