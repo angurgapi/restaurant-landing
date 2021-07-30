@@ -11,7 +11,6 @@ module.exports = (env, options) => {
     };
     const PAGES = `${PATHS.src}/pug/pages/`;
     
-
     return {
         mode: 'development',
         devServer: {
@@ -27,7 +26,8 @@ module.exports = (env, options) => {
         },
         output: {
             filename: '[name].[hash].js',
-            path: PATHS.dist
+            path: PATHS.dist,
+        
         },
 
         plugins: [
@@ -48,7 +48,7 @@ module.exports = (env, options) => {
         module: {
             rules: [            
                 {
-                    test: /\.(png|jpg|svg|gif)$/,
+                    test: /\.(png|jpg|svg|gif|webp)$/,
                     use: ['file-loader']
                 },
                 {
