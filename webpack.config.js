@@ -89,9 +89,9 @@ module.exports = (env, options) => {
                         }},
                         {loader: 'css-loader'},
                         {loader: 'sass-loader',
-                            // options: {
-                            //     sourceMap: true
-                            // }
+                            options: {
+                                sourceMap: true
+                            }
                         },
                         // {loader: 'sass-resources-loader'}                        
                     

@@ -19,7 +19,7 @@ include ../rectangle/rectangle.pug
                     input(type='tel' placeholder='Phone').field.booking-form__input#telInput
                     
                     label(for="peopleInput").hidden people
-                    select(required).field.booking-form__input#peopleInput
+                    select(required).select.field.booking-form__input#peopleInput
                         option.default-select(value = '0' disabled selected) People
                         option(value= '1') 1 person
                         option(value= '2') 2 people
@@ -30,7 +30,7 @@ include ../rectangle/rectangle.pug
                     input(type='text' placeholder='Date (mm/dd)' onfocus="(this.type='date')" onblur="(this.type='text')").field.booking-form__input
                     
                     label(for="timeInput").hidden time
-                    select(required).field.booking-form__input#timeInput                        
+                    select(required).select.field.booking-form__input#timeInput                        
                         option(value= '18') 18:00
                         option(value= '19') 19:00
                         option(value= '20') 20:00
