@@ -1,6 +1,6 @@
 //- include ../rectangle/rectangle.pug
 
-.section.events-section#events
+.section.events-section#events(style="background-image: url('./img/specialty-bg.png')")
     .section__header 
             p.section__caption private events
     .section__body.events-body     
@@ -10,14 +10,14 @@
             .section__body__rectangle.events-rectangle
                 +rectangle()
             .img-wrapper
-                img.section__img.events__img(src="../../../src/img/rings.webp", alt="fireplace")
+                img.section__img.events__img(src="./img/rings.webp", alt="fireplace")
                 p.label weddings
 
         .events-media.media-right
             .section__body__rectangle.events-rectangle
                 +rectangle()
             .img-wrapper
-                img.section__img.events__img(src="../../../src/img/cheers.webp", alt="fireplace")
+                img.section__img.events__img(src="./img/cheers.webp", alt="fireplace")
                 p.label corporate parties
 
     .section__footer 

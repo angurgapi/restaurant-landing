@@ -147,7 +147,9 @@ table {
 
     &__media {            
         flex-direction: row;
-        align-items: center;             
+        align-items: center;         
+        width: 550px;   
+        max-width: 95%; 
     }
     &__img{
         height: 475px;

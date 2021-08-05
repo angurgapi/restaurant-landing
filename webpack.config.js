@@ -10,16 +10,13 @@ module.exports = (env, options) => {
         dist: path.join(__dirname, './dist'),
     };
     const PAGES = `${PATHS.src}/pug/pages/`;
+    const production = options.mode === 'production';
+    const publicDir = production ? 'https://angurgapi.github.io/restaurant-landing/' : '/';
     
-    return {
-        mode: 'development',
+    return {       
+        // devtool: production ? false : 'eval-sourcemap',
         devServer: {
-            // historyApiFallback: true,
-            // contentBase: path.resolve(__dirname, './dist'),
-            // open: true,
-            // compress: true,
-            // hot: true,
-            port: 8080,
+            historyApiFallback: true,
         },
         entry: {
             main: `${PATHS.src}/index.js`,    
@@ -27,6 +24,7 @@ module.exports = (env, options) => {
         output: {
             filename: '[name].[hash].js',
             path: PATHS.dist,
+            publicPath: publicDir,
         
         },
 
@@ -48,8 +46,20 @@ module.exports = (env, options) => {
         module: {
             rules: [            
                 {
-                    test: /\.(png|jpg|svg|gif|webp)$/,
-                    use: ['file-loader']
+                    test: /\.(png|jpg|jpeg|svg|gif|webp)$/i,
+                    use: [
+                        {
+                          loader: 'file-loader',
+                          options: {
+                            name: 'img/[name].[ext]',
+                            publicPath: '../',
+                            exclude: ['src/fonts/'],
+                            sourceMap: true,
+                          },
+                        },
+                       
+                      ],
+                                   
                 },
                 {
                     test: /\.(ttf|woff|woff2|eot)$/,
@@ -63,7 +73,12 @@ module.exports = (env, options) => {
                 },
                 {
                     test: /\.pug$/,
-                    use: ['pug-loader']
+                    use:
+                    {loader: 'pug-loader',
+                        options: {
+                                sourceMap: true
+                            }
+                    },
                 },
                 {
                     test: /\.(sa|sc|c)ss$/,
@@ -74,9 +89,9 @@ module.exports = (env, options) => {
                         }},
                         {loader: 'css-loader'},
                         {loader: 'sass-loader',
-                            options: {
-                                sourceMap: true
-                            }
+                            // options: {
+                            //     sourceMap: true
+                            // }
                         },
                         // {loader: 'sass-resources-loader'}                        
                     

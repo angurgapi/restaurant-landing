@@ -19,14 +19,37 @@
     &__row {
         display: flex;
         flex-direction: row;  
-        width: 100%;
-        
-    }
- 
+        width: 100%;        
+    } 
 }
 .default-select{
     color: rgba(0,0,0,.5)
 }
-select {
-    padding-right: 20px;
+// select {
+//     padding-right: 20px;
+//     -webkit-appearance: none;
+//     -moz-appearance: none;
+//     appearance: none;       /* Remove default arrow */
+//     background-image: url('../../../img/arrow.png');   /* Add custom arrow */
+//  }
+
+ select {
+    font: 400 12px/1.3 sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--baseFg);
+    border: 1px solid var(--baseFg);
+    line-height: 1;
+    outline: 0;
+    padding: 0.65em 2.5em 0.55em 0.75em;
+    border-radius: var(--radius);
+    background-color: var(--baseBg);
+    background-image: url('../../../img/arrow.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 20px 30%;
+    background-position: right 20px center, right bottom, right bottom, right bottom;   
+  }
+
+.hidden {
+    display: none;
 }
